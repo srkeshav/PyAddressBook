@@ -1,13 +1,24 @@
 class Address:
-    def Address(self):
-        County = self.State
-        print("{}, {}, \n{}-{}, \n{}".format(self.FlatNo,self.BuildingName,self.City,self.Zip,County))
-    FlatNo=501
-    BuildingName="Jonas Tower"
-    Zip=302101 
-    City="Hyderabad"
-    State="Kolkata"
-#501, Jonas Tower, Hyderabad-302101, Kolkata
-com = Address()
-#Address.print(com)
-print('Building Name: ' + com.BuildingName + ' City: ' + com.City + ' State: ' + com.State + '-' + str(com.Zip))
+    building_name=""
+    street_town=""
+    city=""
+    zip=""
+    state=""
+
+    def AddAddress():
+        com = Address()
+        building_name = input("Enter your building name: ")
+        street_town = input("Enter your street and town: ")
+        city = input("Enter your city: ")
+        zip = input("Enter your zip: ")
+        state = input("Enter your state: ")
+        
+        print ("Your address is: " + building_name + ", " + street_town + ", " + city + "-" + zip + ", " + state)
+        
+        # print("Your building name is: " + building_name)
+        # print("Your street and town is: " + street_town)
+        # print("Your city is: " + city)
+        # print("Your zip is: " + zip)
+        # print("Your state is: " + state)
+
+Address.AddAddress()
