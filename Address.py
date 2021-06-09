@@ -1,11 +1,13 @@
 class Address:
-    def config(self):
-        print("{}, {}, {}-{}, {}".format(self.FlatNo,self.BuildingName,self.City,self.Zip, self.State))
+    def Address(self):
+        County = self.State
+        print("{}, {}, \n{}-{}, \n{}".format(self.FlatNo,self.BuildingName,self.City,self.Zip,County))
     FlatNo=501
-    BuildingName="Suryalok Tower"
-    Zip=401101 
-    City="Mumbai"
-    State="Maharashtra"
-#501, Suryalok Tower, Mumbai-401101, Maharashtra
+    BuildingName="Jonas Tower"
+    Zip=302101 
+    City="Hyderabad"
+    State="Kolkata"
+#501, Jonas Tower, Hyderabad-302101, Kolkata
 com = Address()
-Address.config(com)
+#Address.print(com)
+print('Building Name: ' + com.BuildingName + ' City: ' + com.City + ' State: ' + com.State + '-' + str(com.Zip))
